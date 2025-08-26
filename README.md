@@ -212,7 +212,7 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosy
 
 ## 👨‍💻 Geliştirici
 
-**Muhammed İstaken**
+**@muhammedd.tsx**
 - GitHub: [@muhammedistaken](https://github.com/muhammedistaken)
 
 ## 🙏 Teşekkürler
