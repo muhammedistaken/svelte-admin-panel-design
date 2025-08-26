@@ -1,17 +1,17 @@
 <script lang="ts">
     const analyticsData = {
         pageViews: [
-            { page: "/dashboard", views: 12540, percentage: 35 },
-            { page: "/users", views: 8920, percentage: 25 },
-            { page: "/products", views: 6780, percentage: 19 },
-            { page: "/settings", views: 4320, percentage: 12 },
-            { page: "/analytics", views: 3210, percentage: 9 }
+            { page: "/ana-sayfa", views: 12540, percentage: 35 },
+            { page: "/kullanicilar", views: 8920, percentage: 25 },
+            { page: "/urunler", views: 6780, percentage: 19 },
+            { page: "/ayarlar", views: 4320, percentage: 12 },
+            { page: "/analitik", views: 3210, percentage: 9 }
         ],
         trafficSources: [
-            { source: "Direct", visitors: 15240, percentage: 42 },
-            { source: "Search Engines", visitors: 11850, percentage: 33 },
-            { source: "Social Media", visitors: 5680, percentage: 16 },
-            { source: "Referrals", visitors: 3240, percentage: 9 }
+            { source: "Doğrudan", visitors: 15240, percentage: 42 },
+            { source: "Arama Motorları", visitors: 11850, percentage: 33 },
+            { source: "Sosyal Medya", visitors: 5680, percentage: 16 },
+            { source: "Yönlendirme", visitors: 3240, percentage: 9 }
         ],
         browserStats: [
             { browser: "Chrome", users: 18540, percentage: 68 },
@@ -20,55 +20,55 @@
             { browser: "Edge", users: 1350, percentage: 5 }
         ],
         monthlyData: [
-            { month: "Jan", revenue: 12000, orders: 240 },
-            { month: "Feb", revenue: 15000, orders: 290 },
+            { month: "Oca", revenue: 12000, orders: 240 },
+            { month: "Şub", revenue: 15000, orders: 290 },
             { month: "Mar", revenue: 18000, orders: 350 },
-            { month: "Apr", revenue: 16000, orders: 310 },
+            { month: "Nis", revenue: 16000, orders: 310 },
             { month: "May", revenue: 22000, orders: 420 },
-            { month: "Jun", revenue: 25000, orders: 480 },
-            { month: "Jul", revenue: 28000, orders: 520 },
-            { month: "Aug", revenue: 32000, percentage: 85 }
+            { month: "Haz", revenue: 25000, orders: 480 },
+            { month: "Tem", revenue: 28000, orders: 520 },
+            { month: "Ağu", revenue: 32000, percentage: 85 }
         ]
     };
 
     const conversionRate = 3.2;
-    const avgSessionDuration = "2m 34s";
+    const avgSessionDuration = "2dk 34sn";
     const bounceRate = 42.5;
 </script>
 
 <div class="flex-1 p-4 h-full overflow-y-auto scrollbar">
     
     <div class="mb-8">
-        <h1 class="text-2xl font-light text-black/80 mb-2">Analytics</h1>
-        <p class="text-sm text-black/50">Detailed insights into your application performance and user behavior</p>
+        <h1 class="text-2xl font-light text-black/80 mb-2">Analitik</h1>
+        <p class="text-sm text-black/50">Uygulama performansı ve kullanıcı davranışları hakkında detaylı bilgiler</p>
     </div>
 
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <div class="bg-white border border-black/10 p-6">
-            <h3 class="text-sm font-medium text-black/60 mb-2">Conversion Rate</h3>
+            <h3 class="text-sm font-medium text-black/60 mb-2">Dönüşüm Oranı</h3>
             <p class="text-2xl font-light text-black/80">{conversionRate}%</p>
             <div class="mt-3 h-1 bg-black/5 rounded-full overflow-hidden">
                 <div class="h-full bg-green-500 rounded-full" style="width: {conversionRate * 10}%"></div>
             </div>
         </div>
         <div class="bg-white border border-black/10 p-6">
-            <h3 class="text-sm font-medium text-black/60 mb-2">Avg. Session</h3>
+            <h3 class="text-sm font-medium text-black/60 mb-2">Ort. Oturum Süresi</h3>
             <p class="text-2xl font-light text-black/80">{avgSessionDuration}</p>
             <div class="mt-3 h-1 bg-black/5 rounded-full overflow-hidden">
                 <div class="h-full bg-blue-500 rounded-full" style="width: 65%"></div>
             </div>
         </div>
         <div class="bg-white border border-black/10 p-6">
-            <h3 class="text-sm font-medium text-black/60 mb-2">Bounce Rate</h3>
+            <h3 class="text-sm font-medium text-black/60 mb-2">Çıkma Oranı</h3>
             <p class="text-2xl font-light text-black/80">{bounceRate}%</p>
             <div class="mt-3 h-1 bg-black/5 rounded-full overflow-hidden">
                 <div class="h-full bg-orange-500 rounded-full" style="width: {bounceRate}%"></div>
             </div>
         </div>
         <div class="bg-white border border-black/10 p-6">
-            <h3 class="text-sm font-medium text-black/60 mb-2">Page Views</h3>
-            <p class="text-2xl font-light text-black/80">35.8K</p>
+            <h3 class="text-sm font-medium text-black/60 mb-2">Sayfa Görüntüleme</h3>
+            <p class="text-2xl font-light text-black/80">35,8K</p>
             <div class="mt-3 h-1 bg-black/5 rounded-full overflow-hidden">
                 <div class="h-full bg-purple-500 rounded-full" style="width: 78%"></div>
             </div>
@@ -79,7 +79,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
         
         <div class="bg-white border border-black/10 p-6">
-            <h3 class="text-lg font-light text-black/70 mb-4">Revenue Trend</h3>
+            <h3 class="text-lg font-light text-black/70 mb-4">Gelir Trendi</h3>
             <div class="h-48 relative">
                 <svg class="w-full h-full" viewBox="0 0 400 180">
                     
@@ -117,7 +117,7 @@
 
         
         <div class="bg-white border border-black/10 p-6">
-            <h3 class="text-lg font-light text-black/70 mb-4">Top Pages</h3>
+            <h3 class="text-lg font-light text-black/70 mb-4">Popüler Sayfalar</h3>
             <div class="space-y-4">
                 {#each analyticsData.pageViews as page}
                     <div class="flex items-center justify-between">
@@ -141,7 +141,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         
         <div class="bg-white border border-black/10 p-6">
-            <h3 class="text-lg font-light text-black/70 mb-4">Traffic Sources</h3>
+            <h3 class="text-lg font-light text-black/70 mb-4">Trafik Kaynakları</h3>
             <div class="space-y-4">
                 {#each analyticsData.trafficSources as source}
                     <div class="flex items-center justify-between">
@@ -163,7 +163,7 @@
 
         
         <div class="bg-white border border-black/10 p-6">
-            <h3 class="text-lg font-light text-black/70 mb-4">Browser Statistics</h3>
+            <h3 class="text-lg font-light text-black/70 mb-4">Tarayıcı İstatistikleri</h3>
             <div class="space-y-4">
                 {#each analyticsData.browserStats as browser}
                     <div class="flex items-center justify-between py-2">
